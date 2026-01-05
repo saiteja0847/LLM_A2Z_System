@@ -6,7 +6,6 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%28Apple%20Silicon%29-lightgrey)](https://www.apple.com/mac/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 [Features](#features) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Architecture](#architecture)
 
@@ -659,7 +658,7 @@ lab train start ... --max-memory-gb 8
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+I welcome contributions! Please see the [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ### Development Workflow
 
