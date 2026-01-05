@@ -673,12 +673,6 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🙏 Acknowledgments
 
 - **MLX Team** — For the excellent MLX framework
@@ -691,9 +685,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Documentation** — See the [docs/](docs/) directory
-- **Issues** — Report bugs on [GitHub Issues](https://github.com/yourusername/LLM_A2Z_System/issues)
-- **Discussions** — Join our [GitHub Discussions](https://github.com/yourusername/LLM_A2Z_System/discussions)
+- **Documentation** — See the [docs/](docs/) directory for detailed technical documentation
 
 ---
 
