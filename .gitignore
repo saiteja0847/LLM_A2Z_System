@@ -87,3 +87,4 @@ web/web/package-lock.json
 
 # Claude Code session files
 .claude/
+SESSION_LOG.md
