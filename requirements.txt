@@ -1,0 +1,11 @@
+# LLM_A2Z_System dependencies
+# Add dependencies with pinned versions as you install them
+# Document WHY each dependency is needed
+
+# RLM (Recursive Language Models) - Enables near-infinite context processing
+# by recursively chunking and processing inputs. Used by:
+# - RLMRouter for large document processing
+# - CLI 'lab rlm' command
+# - API /api/v1/rlm/ endpoints
+# Source: https://github.com/alexzhang13/rlm
+git+https://github.com/alexzhang13/rlm.git

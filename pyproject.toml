@@ -1,0 +1,70 @@
+[project]
+name = "ai-lab"
+version = "0.1.0"
+description = "Model, train, test, use system - Complete local LLM platform for Apple Silicon"
+authors = [{name = "AI Lab Team"}]
+requires-python = ">=3.11,<3.14"
+readme = "README.md"
+
+dependencies = [
+    # Core
+    "typer>=0.12.0,<0.13",
+    "rich>=13.7.0,<14",
+    "pydantic>=2.7.0,<3",
+    "pyyaml>=6.0.1,<7",
+
+    # ML Backends
+    "mlx>=0.22.0,<0.23",
+    "mlx-lm>=0.22.0,<0.23",
+    "llama-cpp-python>=0.2.70,<0.3",
+
+    # API & UI
+    "fastapi>=0.111.0,<0.112",
+    "uvicorn>=0.30.0,<0.31",
+    "websockets>=12.0,<13",
+    "httpx>=0.27.0,<0.28",
+    "python-multipart>=0.0.9,<0.1",
+
+    # Utils
+    "huggingface-hub>=0.23.0,<0.24",
+    "psutil>=5.9.0,<6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+lab = "ai_lab.cli:app"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
